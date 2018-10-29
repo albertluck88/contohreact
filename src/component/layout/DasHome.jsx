@@ -5,6 +5,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import './dashStyle.css'
 import DasCard from '../cards/DasCard'
+import classNames from 'classnames'
+import EmailHome from '../email/emailHome'
 
 const styles = theme => ({
   root: {
@@ -23,20 +25,20 @@ function DasHome(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={24}>
-      <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}><DasCard/></Paper>
+      <Grid item xs={6} sm={3} className={'box-luar'}>
+          <Paper className={classNames(classes.paper, 'display')}><DasCard/></Paper>
         </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}><DasCard/></Paper>
+        <Grid item xs={6} sm={3}  className={'box-luar'}>
+          <Paper className={classNames(classes.paper, 'display')}><DasCard/></Paper>
         </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}><DasCard/></Paper>
+        <Grid item xs={6} sm={3}  className={'box-luar'}>
+          <Paper className={classNames(classes.paper, 'display')}><DasCard/></Paper>
         </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}><DasCard/></Paper>
+        <Grid item xs={6} sm={3}  className={'box-luar'}>
+          <Paper className={classNames(classes.paper, 'display')}><DasCard/></Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        <Grid item xs={12} sm={6}  >
+          <Paper className={classes.paper}><EmailHome/></Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>xs=12 sm=6</Paper>

@@ -22,28 +22,24 @@ const styles = {
 function MediaCard(props) {
   const { classes } = props;
   return (
-    <Card className={classes.card}>
-      <CardActionArea>
+    <Card className={classNames(classes.card, 'boxRelative')}>
+      <CardActionArea >
         <CardMedia
+
+        image="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_960_720.png"
           className={classNames(classes.media, 'imageBox')}
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
+          <div className={'boxTeks'}> <h2>20/90</h2></div>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <CardActions className={'display-box'}>
         <Button size="small" color="primary">
-          Share
+          Grap
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Detail
         </Button>
       </CardActions>
     </Card>

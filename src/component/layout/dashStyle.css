@@ -1,4 +1,17 @@
 .box {
     display: inline-flex;
     margin: 2px !important;
+   
 }
+
+.display {
+    display: flex !important;
+  justify-content: center !important;
+}
+
+.box-luar{
+    padding: 10px !important;
+    
+
+}
+

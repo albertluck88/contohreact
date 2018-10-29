@@ -1,5 +1,35 @@
 .imageBox {
-    background-color: blue;
-    width: 20%;
-    height: 60px;
+
+    width: 30%;
+    height: 90px;
+    top: -40px;
+    left: -20px;
+    position : absolute;
+    margin: 13px;
+    
+    
+    
+}
+
+.boxRelative {
+    position: relative;
+    overflow: unset !important;
+    
+
+}
+
+.boxTeks {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: flex-end;
+    margin-left: 60px;
+    border-bottom-style: double;
+
+    
+}
+
+.display-box {
+    justify-content: center !important;
+    display: flex
 }
